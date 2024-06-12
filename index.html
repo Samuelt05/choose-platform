@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Your Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button.iphone {
+            background-color: #007aff;
+        }
+        .button.android {
+            background-color: #34a853;
+        }
+        .button.iphone:hover {
+            background-color: #0051a3;
+        }
+        .button.android:hover {
+            background-color: #22833e;
+        }
+    </style>
 </head>
 <body>
-    <h1>Select Your Platform</h1>
-    <p><a href="https://apps.apple.com/us/app/my-grameen/id6443678346">iPhone</a></p>
-    <p><a href="https://play.google.com/store/apps/details?id=com.grameen.members">Android</a></p>
+    <div class="container">
+        <h1>Select Your Platform</h1>
+        <a href="https://apps.apple.com/us/app/my-grameen/id6443678346" class="button iphone">iPhone</a>
+        <a href="https://play.google.com/store/apps/details?id=com.grameen.members" class="button android">Android</a>
+    </div>
 </body>
 </html>
